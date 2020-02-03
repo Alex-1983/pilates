@@ -1,0 +1,142 @@
+.main-header {
+  position: relative;
+
+  overflow: hidden;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 57%;
+    height: 100%;
+
+    border-bottom-right-radius: 87%;
+    background-color: #91aa59;
+
+    @media (max-width: $screen-md) {
+      left: -38%;
+
+      width: 100%;
+      min-height: 651px;
+
+      border-bottom-right-radius: 64%;
+    }
+
+    @media (max-width: $screen-sm) {
+      top: 0;
+      left: 0;
+
+      width: 118%;
+      min-height: 316px;
+
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 100%;
+    }
+  }
+}
+
+.main-header__inner {
+  position: relative;
+
+  overflow: hidden;
+
+  margin: 0 auto;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 20px;
+    right: -20px;
+
+    width: 58px;
+    height: 58px;
+
+    border: 8px solid #bdcc9b;
+    border-radius: 50%;
+
+    @media (max-width: $screen-md) {
+      top: 53px;
+
+      width: 61px;
+      height: 61px;
+    }
+
+    @media (max-width: $screen-sm) {
+      top: 63px;
+      right: -11px;
+
+      width: 20px;
+      height: 20px;
+
+      border: none;
+      background-color: #f1f4ea;
+    }
+  }
+}
+
+.main-header__navigation {
+  position: relative;
+  z-index: 11;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  padding-top: 27px;
+  padding-right: 35px;
+  padding-left: 100px;
+
+  @media (max-width: $screen-md) {
+    align-items: stretch;
+
+    padding-left: 60px;
+  }
+
+  @media (max-width: $screen-sm) {
+    padding-top: 13px;
+    padding-right: 5vw;
+    padding-left: 5vw;
+  }
+}
+
+.main-header__logo {
+  z-index: 10;
+
+  margin-right: 488px;
+
+  @media (max-width: $screen-md) {
+    margin-right: 34vw;
+  }
+
+  @media (max-width: $screen-sm) {
+    margin-right: 0;
+  }
+}
+
+.main-header__link-phone {
+  display: block;
+
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+  padding-right: 68px;
+
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+
+  letter-spacing: -0.1px;
+
+  color: $text-color;
+
+  @media (max-width: $screen-md) {
+    margin-top: 5px;
+    padding-right: 25px;
+  }
+
+  @media (max-width: $screen-sm) {
+    display: none;
+  }
+}
