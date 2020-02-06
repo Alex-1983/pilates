@@ -1,0 +1,202 @@
+.card {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 185px 4.8vw 93px;
+  height: 100%;
+
+  color: $white;
+  border-radius: 5px;
+  background-color: rgba(145, 170, 89, 0.9);
+
+
+  @media (max-width: $screen-md) {
+    padding: 100px 3.4vw 40px;
+  }
+
+  &--1 {
+    background-color: rgba(145, 170, 89, 0.5);
+  }
+
+  &--2 {
+    background-color: rgba(145, 170, 89, 0.7);
+  }
+
+  @media (max-width: $screen-sm) {
+    padding-right: 14vw;
+    padding-left: 14vw;
+  }
+}
+
+.card__number {
+  position: absolute;
+  top: 57px;
+  right: 15px;
+  z-index: 1;
+
+  font-size: 207px;
+  font-weight: 700;
+  line-height: 209px;
+
+  color: rgba(255, 255, 255, 0.1);
+
+  @media (max-width: $screen-md) {
+    top: 25px;
+    right: 20px;
+
+    font-size: 115px;
+    line-height: 117px;
+  }
+
+  @media (max-width: $screen-sm) {
+    right: 40px;
+  }
+
+  &--2 {
+    right: 45px;
+
+    font-weight: 400;
+
+    @media (max-width: $screen-md) {
+      right: 20px;
+
+      font-weight: 700;
+    }
+
+    @media (max-width: $screen-sm) {
+      right: 40px;
+    }
+  }
+
+  &--3 {
+    right: 55px;
+
+    @media (max-width: $screen-md) {
+      right: 20px;
+    }
+
+    @media (max-width: $screen-sm) {
+      right: 40px;
+    }
+  }
+}
+
+.card span {
+  z-index: 2;
+
+  display: block;
+
+  margin: 0;
+  padding: 0;
+
+  font-size: 14px;
+  line-height: 16px;
+
+  text-transform: uppercase;
+
+  @media (max-width: $screen-md) {
+    font-size: 11px;
+    line-height: 13px;
+  }
+}
+
+.card h3 {
+  z-index: 2;
+
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 33px;
+
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  @media (max-width: $screen-md) {
+    margin-bottom: 10px;
+
+    font-size: 17px;
+    line-height: 22px;
+
+    letter-spacing: 2.3px;
+  }
+}
+
+
+.card p {
+  z-index: 2;
+
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 28px;
+
+  @media (max-width: $screen-md) {
+    margin-bottom: 17px;
+    margin-left: 5px;
+
+    font-size: 15px;
+    line-height: 21px;
+
+    letter-spacing: 0.5px;
+  }
+
+  @media (max-width: $screen-sm) {
+    margin-left: 0;
+  }
+}
+
+.card__table {
+  z-index: 2;
+
+  margin: 0;
+  margin-bottom: 33px;
+  padding: 0;
+
+  border-collapse: collapse;
+
+  @media (max-width: $screen-md) {
+    margin-bottom: 27px;
+  }
+}
+
+.card__table td {
+  margin: 0;
+  padding: 5px;
+
+  font-size: 18px;
+  line-height: 25px;
+
+  vertical-align: top;
+  letter-spacing: -0.4px;
+  text-transform: lowercase;
+
+  @media (max-width: $screen-md) {
+    padding: 3px;
+
+    font-size: 16px;
+    line-height: 24px;
+
+    letter-spacing: -0.5px;
+  }
+
+  &:first-child {
+    width: 40px;
+
+    @media (max-width: $screen-md) {
+      width: 24px;
+    }
+
+    @media (max-width: $screen-md) {
+      padding-right: 0;
+      width: 21px;
+    }
+  }
+}

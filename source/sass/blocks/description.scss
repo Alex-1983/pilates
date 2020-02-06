@@ -1,20 +1,14 @@
 .description {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  position: relative;
 
-  padding: 98px 35px 0 100px;
+  padding: 98px 100px 350px;
 
   @media (max-width: $screen-md) {
-    padding-top: 90px;
-    padding-right: 8.2vw;
-    padding-left: 8.2vw;
+    padding: 90px 8.2vw 150px;
   }
 
   @media (max-width: $screen-sm) {
-    padding-top: 55px;
-    padding-right: 5vw;
-    padding-left: 5vw;
+    padding: 55px 5vw 20px;
   }
 }
 
@@ -139,7 +133,7 @@
 .description__img-wrap {
   position: absolute;
   top: 23px;
-  right: 50px;
+  right: 0;
   z-index: -1;
 
   @media (max-width: $screen-md) {
@@ -152,10 +146,9 @@
 
     display: block;
 
-    width: 281px;
-
     margin-top: -33px;
     margin-left: auto;
+    width: 281px;
   }
 }
 
@@ -222,7 +215,9 @@
 }
 
 .description__wrap-number {
-  margin-top: 220px;
+  position: absolute;
+  top: 320px;
+  right: 35px;
 
   @media (max-width: $screen-md) {
     display: none;

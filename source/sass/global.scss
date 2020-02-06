@@ -2,33 +2,41 @@
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
   position: absolute;
+
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+
+  margin: -1px;
+  padding: 0;
   width: 1px;
   height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
+
   white-space: nowrap;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+
+  border: 0;
 }
 
 .btn {
-  box-sizing: border-box;
   display: inline-block;
-  max-width: 100%;
+  overflow: hidden;
+
+  box-sizing: border-box;
   margin: 0;
-  border: 0;
-  vertical-align: middle;
-  text-overflow: ellipsis;
+  max-width: 100%;
+
+  font-family: inherit;
+  font-size: 1em;
+
+  cursor: pointer;
   user-select: none;
   text-align: center;
-  font-size: 1em;
-  font-family: inherit;
+  vertical-align: middle;
   text-decoration: none;
   text-transform: none;
+  text-overflow: ellipsis;
+
+  border: 0;
   background-image: none;
-  cursor: pointer;
-  overflow: hidden;
 }
 
 .list-reset {
@@ -36,4 +44,88 @@ input[type="radio"].visually-hidden {
   padding: 0;
 
   list-style: none;
+}
+
+.btn-link {
+  position: relative;
+
+  overflow: visible;
+
+  padding: 15px 33px;
+  width: 247px;
+
+  font-size: 14px;
+  line-height: 1.5;
+
+  color: $white;
+  border: 2px solid $white;
+  border-radius: 40px;
+
+  @media (max-width: $screen-sm) {
+    padding: 10px;
+    width: 158px;
+
+    font-size: 11px;
+  }
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+
+    transform: translateY(-50%);
+  }
+
+  &::before {
+    right: -36px;
+
+    width: 70px;
+    height: 2px;
+
+    background-color: $white;
+  }
+
+  &::after {
+    top: 49%;
+    right: -33px;
+
+    width: 9px;
+    height: 9px;
+
+    transform: rotate(45deg);
+    transform-origin: 100% 50% 0;
+
+    border: 2px solid $white;
+    border-bottom-color: rgba(255, 255, 255, 0);
+    border-left-color: rgba(255, 255, 255, 0);
+  }
+
+  &--card {
+    margin-top: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    font-size: 18px;
+    line-height: 33px;
+
+    @media (max-width: $screen-md) {
+      padding: 5px 10px;
+      width: 130px;
+
+      font-size: 14px;
+      line-height: 16px;
+
+      &::before {
+        right: -18px;
+
+        width: 30px;
+      }
+
+      &::after {
+        top: 48%;
+        right: -18px;
+      }
+    }
+  }
 }
