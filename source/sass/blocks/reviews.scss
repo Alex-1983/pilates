@@ -1,0 +1,157 @@
+.reviews {
+  position: relative;
+
+  margin: 0 auto;
+  padding: 40px 100px 100px;
+
+  @media (max-width: $screen-md) {
+    padding-right: 8.2vw;
+    padding-bottom: 45px;
+    padding-left: 8.2vw;
+  }
+
+  @media (max-width: $screen-sm) {
+    padding-top: 20px;
+    padding-right: 5vw;
+    padding-left: 5vw;
+  }
+}
+
+.reviews__slider {
+  padding-right: 95px;
+  padding-left: 95px;
+
+  @media (max-width: $screen-md) {
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 60px;
+    padding-left: 60px;
+    width: 83vw;
+  }
+
+  @media (max-width: $screen-sm) {
+    padding-right: 0;
+    padding-left: 0;
+    width: 100%;
+  }
+}
+
+.reviews h2 {
+  position: relative;
+
+  margin: 0;
+  margin-bottom: 70px;
+  padding: 0;
+  padding-left: 55px;
+
+  font-size: 46px;
+  font-weight: 400;
+  line-height: 55px;
+
+  letter-spacing: 1.3px;
+
+  @media (max-width: $screen-md) {
+    margin-bottom: 42px;
+
+    font-size: 24px;
+    line-height: 30px;
+
+    letter-spacing: -0.1px;
+  }
+
+  @media (max-width: $screen-sm) {
+    margin-bottom: 27px;
+    padding-left: 24px;
+
+    font-size: 18px;
+    line-height: 20px;
+
+    letter-spacing: -0.5px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+
+    width: 37px;
+    height: 2px;
+
+    transform: translateY(-50%);
+
+    background-color: $text-color;
+
+    @media (max-width: $screen-sm) {
+      width: 16px;
+    }
+  }
+}
+
+.reviews__wrap-number {
+  position: absolute;
+  top: 240px;
+  right: 35px;
+}
+
+.reviews__slider-pagination {
+  bottom: 33px;
+  left: 50%;
+  z-index: 3;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  width: 90%;
+
+  transform: translateX(-50%);
+
+  @media (max-width: $screen-md) {
+    bottom: 10px;
+
+    padding-right: 4px;
+
+    @media (max-width: $screen-sm) {
+      bottom: 22px;
+
+      padding-right: 0;
+    }
+  }
+}
+
+.reviews__slider-pagination .swiper-pagination-bullet {
+  display: block;
+
+  margin-right: 29px;
+  width: 8px;
+  height: 8px;
+
+  transition: background 0.3s ease;
+
+  opacity: 1;
+  background: #cdcdcd;
+
+  @media (max-width: $screen-md) {
+    margin-right: 12px;
+    width: 6px;
+    height: 6px;
+  }
+}
+
+.reviews__slider-pagination .swiper-pagination-bullet:last-child {
+  margin-right: 0;
+}
+
+.reviews__slider-pagination .swiper-pagination-bullet-active {
+  width: 15px;
+  height: 15px;
+
+  background-color: #91aa59;
+
+  @media (max-width: $screen-md) {
+    width: 10px;
+    height: 10px;
+  }
+}

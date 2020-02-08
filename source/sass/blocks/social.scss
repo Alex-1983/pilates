@@ -1,0 +1,30 @@
+.social {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.social__link {
+  position: relative;
+
+  display: block;
+
+  margin-right: 4px;
+  padding: 3px;
+  width: 26px;
+  height: 26px;
+
+  cursor: pointer;
+
+  @media (max-width: $screen-md) {
+    margin-right: 7px;
+    width: 24px;
+    height: 24px;
+  }
+
+  svg {
+    width: 100%;
+    height: 100%;
+
+    fill: #7f7f7f;
+  }
+}

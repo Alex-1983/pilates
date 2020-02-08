@@ -75,6 +75,10 @@ input[type="radio"].visually-hidden {
     top: 50%;
 
     transform: translateY(-50%);
+
+    @media (max-width: $screen-sm) {
+      display: none;
+    }
   }
 
   &::before {
@@ -115,6 +119,13 @@ input[type="radio"].visually-hidden {
 
       font-size: 14px;
       line-height: 16px;
+
+      &::before,
+      &::after {
+        @media (max-width: $screen-sm) {
+          display: block;
+        }
+      }
 
       &::before {
         right: -18px;

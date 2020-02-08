@@ -1,0 +1,65 @@
+.slider-toggles__btn {
+  position: absolute;
+  top: 350px;
+
+  margin: 0;
+  padding: 0;
+  width: 42px;
+  height: 42px;
+
+  font-size: 0;
+
+  color: transparent;
+  background-color: transparent;
+
+  @media (max-width: $screen-md) {
+    top: 183px;
+
+    width: 28px;
+    height: 28px;
+  }
+
+
+  @media (max-width: $screen-sm) {
+    display: none;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    left: 5px;
+
+    width: 28px;
+    height: 28px;
+
+    transform: rotate(45deg);
+
+    border: 2px solid rgb(179, 179, 179);
+    border-top: rgba(179, 179, 179, 0);
+    border-right: rgba(179, 179, 179, 0);
+
+    @media (max-width: $screen-md) {
+      width: 15px;
+      height: 15px;
+    }
+  }
+
+  &--prev {
+    left: 102px;
+
+    @media (max-width: $screen-md) {
+      left: 8vw;
+    }
+  }
+
+  &--next {
+    right: 102px;
+
+    transform: rotate(180deg);
+
+    @media (max-width: $screen-md) {
+      right: 8vw;
+    }
+  }
+}
