@@ -1,15 +1,15 @@
 .comment__inner {
   display: flex;
 
+  margin-right: auto;
+  margin-left: auto;
   padding: 80px 10.4vw 100px;
 
   background-image: url("../img/bg-slider-lg.png");
   background-repeat: no-repeat;
-  background-position: 805px 37px;
+  background-position: 92% 37px;
 
   @media (max-width: $screen-md) {
-    margin-right: auto;
-    margin-left: auto;
     padding: 20px 32px 38px;
     min-width: 415px;
     max-width: 600px;
@@ -61,11 +61,11 @@
 }
 
 .comment__description {
+  flex-grow: 1;
+
   width: 450px;
 
   @media (max-width: $screen-md) {
-    flex-grow: 1;
-
     width: 309px;
   }
 
@@ -81,7 +81,6 @@
     }
   }
 }
-
 
 .comment__author {
   display: block;
