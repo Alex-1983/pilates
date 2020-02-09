@@ -1,6 +1,19 @@
 .social {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+}
+
+.social__item {
+  margin-right: 4px;
+
+  @media (max-width: $screen-md) {
+    margin-right: 7px;
+  }
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .social__link {
@@ -8,7 +21,6 @@
 
   display: block;
 
-  margin-right: 4px;
   padding: 3px;
   width: 26px;
   height: 26px;
@@ -16,7 +28,6 @@
   cursor: pointer;
 
   @media (max-width: $screen-md) {
-    margin-right: 7px;
     width: 24px;
     height: 24px;
   }
@@ -26,5 +37,57 @@
     height: 100%;
 
     fill: #7f7f7f;
+  }
+
+  &--vk {
+    width: 35px;
+    height: 35px;
+
+    @media (max-width: $screen-md) {
+      width: 36px;
+      height: 24px;
+    }
+  }
+
+  &--fb {
+    width: 37px;
+    height: 33px;
+
+    @media (max-width: $screen-md) {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &--in {
+    width: 30px;
+    height: 30px;
+
+    @media (max-width: $screen-md) {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  &--vk,
+  &--fb,
+  &--in {
+    svg {
+      fill: $white;
+    }
+  }
+}
+
+.social__wrap {
+  align-self: flex-start;
+
+  margin-top: 7px;
+  margin-left: auto;
+
+  @media (max-width: $screen-sm) {
+    align-self: center;
+
+    margin: 0;
+    margin-bottom: 30px;
   }
 }
