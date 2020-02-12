@@ -36,7 +36,7 @@ body {
   font-size: $font-size;
   line-height: $line-height;
   text-align: left;
-  color: $text-color;
+  color: $black;
   background-color: $white;
 
   -webkit-font-smoothing: antialiased;
@@ -231,13 +231,13 @@ blockquote {
 
 code {
   padding: 0.06em 0.3em;
-  color: $text-color;
+  color: $black;
   background-color: rgba(#000, 0.08);
 }
 
 kbd {
   padding: 0.06em 0.3em;
-  color: $text-color;
+  color: $black;
 
   kbd {
     padding: 0;

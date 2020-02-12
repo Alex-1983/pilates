@@ -1,0 +1,35 @@
+<div class="popup-record">
+  <button class="popup-record__close close close--popup-record" type="button" aria-label="Закрыть" title="Закрыть">
+    <span>Скрыть главное меню</span>
+  </button>
+  <div class="popup-record__title">
+    <p>Хочешь записаться на занятие?</p>
+  </div>
+  <div class="popup-record__text">
+    <p>Оставьте контакты и наши менеджеры свяжуться в ближайшее время</p>
+  </div>
+  <form class="popup-record__form form" action="#" method="POST">
+    <p class="form__item form__item--name">
+      <label>
+        <input id="name" type="text" name="name" placeholder="Имя" pattern="^([A-Za-zА-Яа-яЁё]+\s?'?-?)+$" autocomplete="on" required>
+      </label>
+    </p>
+    <p class="form__item form__item--phone">
+      <label>
+        <input id="phone" type="tel" name="phone" placeholder="Телефон" pattern="\+7\s\([0-9]{3}\)\s\d{3}[-]\d{2}[-]\d{2}" autocomplete="on" required>
+      </label>
+    </p>
+    <p class="form__item form__item--email">
+      <label>
+        <input id="mail" type="email" name="mail" placeholder="E-mail" pattern="[a-z0-9!#$%&amp;'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&amp;'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?" autocomplete="on" required>
+      </label>
+    </p>
+    <p class="form__item form__item--checkbox">
+      <label>
+        <input class="visually-hidden" type="checkbox" name="checkbox" checked>
+        <span>Я согласен на обработку персональных данных</span>
+      </label>
+    </p>
+    <button class="btn btn-link form__btn" type="submit">Записаться</button>
+  </form>
+</div>

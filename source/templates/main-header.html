@@ -3,6 +3,9 @@
     <div class="main-header__navigation">
       <a class="main-header__logo">
         <picture>
+          <source type="image/webp" media="(max-width: 763px)" srcset="img/logo-sm.webp">
+          <source type="image/webp" media="(max-width: 1365px)" srcset="img/logo-md.webp">
+          <source type="image/webp" srcset="img/logo.webp">
           <source media="(max-width: 763px)" srcset="img/logo-sm.png">
           <source media="(max-width: 1365px)" srcset="img/logo-md.png">
           <img src="img/logo.png" alt="Pilates">
@@ -12,7 +15,7 @@
         <span>Показать главное меню</span>
       </button>
       <nav class="main-header__main-nav main-nav">
-        <button class="close" type="button" aria-label="Закрыть" title="Закрыть">
+        <button class="main-nav__close close" type="button" aria-label="Закрыть" title="Закрыть">
           <span>Скрыть главное меню</span>
         </button>
         <ul class="list-reset main-nav__list">
@@ -44,6 +47,9 @@
         </div>
         <div class="intro__img">
           <picture>
+            <source type="image/webp" media="(max-width: 763px)" srcset="img/bg-intro-sm.webp">
+            <source type="image/webp" media="(max-width: 1365px)" srcset="img/bg-intro-md.webp">
+            <source type="image/webp" srcset="img/bg-intro-lg.webp">
             <source media="(max-width: 763px)" srcset="img/bg-intro-sm.png">
             <source media="(max-width: 1365px)" srcset="img/bg-intro-md.png">
             <img src="img/bg-intro-lg.png" alt="Пилатес">

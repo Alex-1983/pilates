@@ -1,14 +1,10 @@
 .close {
-  position: absolute;
-  right: 40px;
-  z-index: 1;
-
   display: inline-block;
 
   padding: 0;
   width: 55px;
 
-  line-height: 30px;
+  line-height: 55px;
 
   cursor: pointer;
   user-select: none;
@@ -17,15 +13,15 @@
   background: 0 0;
 
   @media (max-width: $screen-md) {
-    right: 63px;
+    width: 40px;
 
-    width: 43px;
+    line-height: 40px;
   }
 
   @media (max-width: $screen-sm) {
-    right: 25px;
+    width: 28px;
 
-    width: 30px;
+    line-height: 28px;
   }
 
   > span {
@@ -48,7 +44,7 @@
   &::after {
     content: "";
     position: absolute;
-    top: 0;
+    top: 25px;
     left: 0;
 
     width: 100%;
@@ -56,7 +52,15 @@
 
     transform-origin: 50% 50%;
 
-    background: $white;
+    background-color: $white;
+
+    @media (max-width: $screen-md) {
+      top: 20px;
+    }
+
+    @media (max-width: $screen-sm) {
+      top: 13px;
+    }
   }
 
   &::before {
@@ -65,5 +69,44 @@
 
   &::after {
     transform: rotate3d(0, 0, 1, -45deg);
+  }
+
+  &--popup-record {
+    width: 50px;
+
+    @media (max-width: $screen-md) {
+      width: 30px;
+
+      line-height: 30px;
+    }
+
+    @media (max-width: $screen-sm) {
+      width: 21px;
+
+      line-height: 21px;
+    }
+
+    &::before,
+    &::after {
+      height: 2px;
+
+      background-color: $black;
+
+      @media (max-width: $screen-md) {
+        top: 14px;
+      }
+
+      @media (max-width: $screen-sm) {
+        top: 10px;
+      }
+    }
+
+    &::before {
+      transform: rotate3d(0, 0, 1, 48deg);
+    }
+
+    &::after {
+      transform: rotate3d(0, 0, 1, -48deg);
+    }
   }
 }

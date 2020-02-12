@@ -48,7 +48,7 @@
 
     transform: translateY(-50%);
 
-    background-color: $text-color;
+    background-color: $black;
 
     @media (max-width: $screen-sm) {
       width: 16px;
@@ -81,7 +81,7 @@
     padding-bottom: 40px;
     width: 100%;
 
-    color: $text-color;
+    color: $black;
     background-color: $white;
   }
 }
@@ -167,7 +167,7 @@
 
     letter-spacing: -0.4px;
 
-    color: $text-color;
+    color: $black;
   }
 }
 
