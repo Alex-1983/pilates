@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Студия пилатеса">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="date=no">
+    <meta name="format-detection" content="address=no">
+    <meta name="format-detection" content="email=no">
+    <title>pilates</title>
+    <link rel="preload" href="fonts/roboto-v20-cyrillic_latin-300.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/roboto-v20-cyrillic_latin-regular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/roboto-v20-cyrillic_latin-700.woff2" as="font" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="css/style.min.css">
+  </head>
+
+  <body>
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+    <header class="main-header">
+      <div class="main-header__inner">
+        <div class="intro">
+          <div class="intro__inner intro__inner--popup">
+            <div class="intro__description">
+              <h1>Студия пилатеса</h1>
+              <p>Tвое здоровое тело через 10 занятий</p>
+              <a class="btn btn-link" href="#">Смотреть расписание</a>
+            </div>
+            <div class="intro__img">
+              <picture>
+                <source type="image/webp" media="(max-width: 763px)" srcset="img/bg-intro-sm.webp">
+                <source type="image/webp" media="(max-width: 1365px)" srcset="img/bg-intro-md.webp">
+                <source type="image/webp" srcset="img/bg-intro-lg.webp">
+                <source media="(max-width: 763px)" srcset="img/bg-intro-sm.png">
+                <source media="(max-width: 1365px)" srcset="img/bg-intro-md.png">
+                <img src="img/bg-intro-lg.png" alt="Пилатес">
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- popup -->
+      <div class="popup-record popup-record__wrapper">
+        <div class="popup-record__title">
+          <p>Хочешь записаться на занятие?</p>
+        </div>
+        <div class="popup-record__text">
+          <p>Оставьте контакты и наши менеджеры свяжуться в ближайшее время</p>
+        </div>
+        <form class="popup-record__form form" action="https://echo.htmlacademy.ru" method="POST">
+          <p class="form__item form__item--name">
+            <label>
+              <input id="name" type="text" name="name" placeholder="Имя" pattern="^([A-Za-zА-Яа-яЁё]+\s?'?-?)+$" autocomplete="on" required>
+            </label>
+          </p>
+          <p class="form__item form__item--phone">
+            <label>
+              <input id="phone" type="tel" name="phone" placeholder="Телефон" pattern="\+7\s\([0-9]{3}\)\s\d{3}[-]\d{2}[-]\d{2}" autocomplete="on" required>
+            </label>
+          </p>
+          <p class="form__item form__item--email">
+            <label>
+              <input id="mail" type="email" name="mail" placeholder="E-mail" pattern="[a-z0-9!#$%&amp;'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&amp;'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?" autocomplete="on" required>
+            </label>
+          </p>
+          <p class="form__item form__item--checkbox">
+            <label>
+              <input class="visually-hidden" type="checkbox" name="checkbox" checked>
+              <span>Я согласен на обработку персональных данных</span>
+            </label>
+          </p>
+          <button class="btn btn-link form__btn" type="submit">Записаться</button>
+        </form>
+      </div>
+    </main>
+    <!-- main-footer -->
+    <footer class="main-footer">
+      <include src="source/templates/contacts.html"></include>
+      <include src="source/templates/footer-bottom.html"></include>
+    </footer>
+  </body>
+
+</html>

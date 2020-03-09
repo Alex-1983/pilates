@@ -1,0 +1,19 @@
+.modal {
+  position: fixed;
+  top: 5px;
+  left: 50%;
+  z-index: 101;
+
+  transform: translateX(-50%);
+
+  display: none;
+
+  &--open {
+    display: block;
+  }
+}
+
+.modal-no-scroll {
+  height: 100vh;
+  overflow: hidden;
+}

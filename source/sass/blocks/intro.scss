@@ -18,6 +18,12 @@
     padding-bottom: 200px;
     padding-left: 5vw;
   }
+
+  &--popup {
+    @media (max-width: $screen-md) {
+      padding-bottom: 260px;
+    }
+  }
 }
 
 .intro__description {

@@ -1,15 +1,6 @@
 .popup-record {
-  display: none;
-
-  position: fixed;
-  top: 5px;
-  left: 50%;
-  z-index: 21;
-
   padding: 200px 155px 215px;
   width: 1170px;
-
-  transform: translateX(-50%);
 
   background-color: $white;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
@@ -206,13 +197,13 @@
       }
     }
 
-    input + span::before,
-    input + span::after {
+    input+ span::before,
+    input+ span::after {
       content: "";
       position: absolute;
     }
 
-    input + span::before {
+    input+ span::before {
       top: 50%;
       left: 0;
 
@@ -234,7 +225,7 @@
       }
     }
 
-    input:checked + span::after {
+    input:checked+ span::after {
       top: 48%;
       left: 13px;
 
@@ -260,7 +251,7 @@
       }
     }
 
-    input:focus + span::before {
+    input:focus+ span::before {
       outline: 1px solid blue;
     }
   }
@@ -323,4 +314,9 @@
   &::after {
     display: none;
   }
+}
+
+.popup-record__wrapper {
+  margin: 0 auto;
+  box-shadow: none;
 }
