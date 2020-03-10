@@ -2,7 +2,7 @@
 
 (function() {
 
-  var btnTop = document.getElementById('to-top');
+  var btnTop = document.getElementById("to-top");
 
   var movementTop = function(e) {
     e.preventDefault();
@@ -23,9 +23,9 @@
 
   var visibilityToggle = function() {
     if (window.pageYOffset >= 500) {
-      document.getElementById('to-top').classList.add('to-top--visible');
+      document.getElementById("to-top").classList.add('to-top--visible');
     } else {
-      document.getElementById('to-top').classList.remove('to-top--visible');
+      document.getElementById("to-top").classList.remove('to-top--visible');
     }
   }
 

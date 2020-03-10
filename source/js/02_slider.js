@@ -7,7 +7,7 @@
   var buttonPrevious = reviews.querySelector(".slider-toggles__btn--prev");
   var buttonNext = reviews.querySelector(".slider-toggles__btn--next");
 
-  var promoSwiper = new Swiper(reviewsSlider, {
+  var reviewsSwiper = new Swiper(reviewsSlider, {
     slidesPerView: 1,
     loop: true,
     navigation: {
